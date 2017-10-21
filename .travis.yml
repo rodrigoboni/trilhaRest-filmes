@@ -2,3 +2,7 @@ language: java
 deploy:
   api-key:
     secure: D43GlxQAA7eV39TAeoxMZ5hRmhzRB5MbD/3p96wVspPAst/YC3rjxTi/tqf9IIZ9WjwHQltH42brx+go4zEkn0g5WJoBAFX3lpEZjLjHNIOGkqS21v9DTQi+MV9wLZJ/3c9uVXBmgEN+kCPmSJcHmrQe6Hwhq3jW2VV0zYzuwLiyDrGehjmo6whISScNCM+2H3vVITSF/NNXAEp8audjPLwuvdVyLnexYtSBLc92rXvDng/mVW4miVlHYfhSNfbCC6Hv+NnQMVY4Ktkso+qPi5c2HVzNpcEBDlJpuE2a1S+8SUWkb1FrrR7L/teDizP6mHV3+gx7pY6IUWllrEmdeiEHAwfTt1Zl6L48wcjI+Me5X1b1FLKTvmjVH2s4KixVfe+TjmM35GNaZWeO/XjjjXHgGgD+/zvjY+k0pafAicSvr906I8BOp4oTid+iMXT/7wL0ox97bTrJN4nNXaQU15iTkpDa3dMzYmiHwSFXuyTdmWJpVY3Zd9Ua4TXwVT0wbC37XRBJbgg8Efibh4yCAGc/mKvW+5AC/Fy4exw1WRvUOACXloBRiGzhh5kaXm+7hQUUVQ052+61qRGTorb6SKbb0bKC5P9LY0aCwo3o8mRDhPXyiQeQ6Ucd5zcrk7ZnbTn/FrZ1gLBFqOxQuGffEOcpznFoNXxdBnMeKfdCWeI=
+  provider: heroku
+  app:
+    staging: rmb-trilharest-filmes-stage
+    master: rmb-trilharest-filmes-prod
