@@ -7,7 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableAutoConfiguration
 @ComponentScan
 public class FilmesApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(FilmesApplication.class, args);
     }
+
 }
