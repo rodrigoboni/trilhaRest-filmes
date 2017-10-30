@@ -1,0 +1,20 @@
+1509217441938|22|statement|connection 9|select setting from pg_settings where name = 'edb_redwood_date'|select setting from pg_settings where name = 'edb_redwood_date'
+1509217442048|0|statement|connection 9|select current_schema()|select current_schema()
+1509217442055|0|rollback|connection 9||
+1509217442071|7|statement|connection 9|select count(*) from public.databasechangeloglock|select count(*) from public.databasechangeloglock
+1509217442074|1|statement|connection 9|select count(*) from public.databasechangeloglock|select count(*) from public.databasechangeloglock
+1509217442079|0|statement|connection 9|SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1|SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+1509217442104|1|statement|connection 9|UPDATE public.databasechangeloglock SET LOCKED = TRUE, LOCKEDBY = '192.168.1.18 (192.168.1.18)', LOCKGRANTED = '2017-10-28 17:04:02.082' WHERE ID = 1 AND LOCKED = FALSE|UPDATE public.databasechangeloglock SET LOCKED = TRUE, LOCKEDBY = '192.168.1.18 (192.168.1.18)', LOCKGRANTED = '2017-10-28 17:04:02.082' WHERE ID = 1 AND LOCKED = FALSE
+1509217442126|22|commit|connection 9||
+1509217442127|0|rollback|connection 9||
+1509217443234|0|statement|connection 9|SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1|SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+1509217443236|0|statement|connection 9|select count(*) from public.databasechangelog|select count(*) from public.databasechangelog
+1509217443237|0|statement|connection 9|SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC|SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+1509217443239|0|commit|connection 9||
+1509217443241|0|rollback|connection 9||
+1509217443245|0|rollback|connection 9||
+1509217443246|0|statement|connection 9|UPDATE public.databasechangeloglock SET LOCKED = FALSE, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1|UPDATE public.databasechangeloglock SET LOCKED = FALSE, LOCKEDBY = NULL, LOCKGRANTED = NULL WHERE ID = 1
+1509217443255|8|commit|connection 9||
+1509217443256|0|rollback|connection 9||
+1509217455891|0|statement|connection 9|select filme0_.id as id1_0_0_, filme0_.duracao as duracao2_0_0_, filme0_.fim_exibicao as fim_exib3_0_0_, filme0_.inicio_exibicao as inicio_e4_0_0_, filme0_.nome as nome5_0_0_, filme0_.sinopse as sinopse6_0_0_ from filme filme0_ where filme0_.id=?|select filme0_.id as id1_0_0_, filme0_.duracao as duracao2_0_0_, filme0_.fim_exibicao as fim_exib3_0_0_, filme0_.inicio_exibicao as inicio_e4_0_0_, filme0_.nome as nome5_0_0_, filme0_.sinopse as sinopse6_0_0_ from filme filme0_ where filme0_.id='252f29dc-b5ba-437d-b070-c5b7a7ad128b'
+1509217455913|0|commit|connection 9||

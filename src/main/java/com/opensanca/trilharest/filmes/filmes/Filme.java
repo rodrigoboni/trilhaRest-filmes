@@ -1,15 +1,26 @@
 package com.opensanca.trilharest.filmes.filmes;
 
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.util.UUID;
 
+@Entity
 public class Filme {
 
+    @Id
     private UUID id;
+
     private String nome;
+
     private String sinopse;
+
+    @ApiModelProperty(value = "Duração do filme sem trailers")
     private Duration duracao;
+
     private LocalDate inicioExibicao;
     private LocalDate fimExibicao;
 
